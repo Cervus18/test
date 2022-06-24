@@ -12,7 +12,7 @@ const Checkout = () => {
     <div id="checkout">
         <h2>Checkout</h2>
         <div onClick={()=> setShowCreditForm(!showCreditForm)} className='checkout-btn'  id="credit">
-          <i class="fa-solid fa-credit-card"></i>
+          <i className="fa-solid fa-credit-card"></i>
           Credit Card
         </div>
         {showCreditForm &&  <CreditForm/>}

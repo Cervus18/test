@@ -8,7 +8,7 @@ const CategoryGrid = ({setProductTotal,productList,setProductList}) => {
    useEffect(() => {
      let counter = 0
      productList.forEach(item => {
-        counter =  counter + parseInt(item.price)
+        counter =  counter + parseInt(item.price)* parseInt(item.quantity)
      })
 
      setProductTotal(counter)
